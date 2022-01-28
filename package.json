@@ -1,0 +1,55 @@
+{
+  "name": "async-iterator-from-rx",
+  "version": "1.0.0",
+  "description": "A tool to convert RxJS style observable stream asyncGenerator",
+  "keywords": [
+    "async iterator",
+    "stream",
+    "rxjs"
+  ],
+  "homepage": "https://github.com/LPegasus/async-iterator-from-rx#readme",
+  "bugs": {
+    "url": "https://github.com/LPegasus/async-iterator-from-rx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LPegasus/async-iterator-from-rx.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "majunchen",
+    "email": "pegusas1@hotmail.com"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "scripts": {
+    "build": "rimraf es lib && tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "27.4.0",
+    "jest": "27.4.7",
+    "rimraf": "3.0.2",
+    "rxjs": "7.5.2",
+    "ts-jest": "^27.1.3",
+    "tslib": "^2",
+    "typescript": "4.5.5"
+  },
+  "peerDependencies": {
+    "rxjs": "^7",
+    "tslib": "^2"
+  },
+  "peerDependenciesMeta": {
+    "rxjs": {
+      "optional": false
+    },
+    "tslib": {
+      "optional": false
+    }
+  }
+}
